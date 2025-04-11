@@ -1,0 +1,8 @@
+view\Total.class
+view\Entrada.class
+view\VistaBelleza.class
+validate\Validar.class
+app\app.class
+controller\ControladorBelleza.class
+view\Parcial.class
+model\Belleza.class
