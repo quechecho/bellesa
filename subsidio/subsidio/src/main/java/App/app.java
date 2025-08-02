@@ -28,13 +28,17 @@ public class app {
         AdministradorArray admArr = new AdministradorArray();
         ControladorSubsidio Con = new ControladorSubsidio( est, VisSub, ent, SalPar, tot, val,verVec, admArr);
         Con.titulo();
-        
+        VisSub.setVisible(true);
+        Con.deshabilitarBtnVisSubent();
+        Con.showPane(ent);
+        ent.getTextideEst().requestFocus();
         VisSub.getBtnCalcular().setEnabled(false);
         VisSub.getBtnTotalizar().setEnabled(false);
         VisSub.setVisible(true);
         Con.showPane(ent);
 
     }
+     
    
 }
 

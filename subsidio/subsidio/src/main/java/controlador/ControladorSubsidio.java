@@ -148,7 +148,7 @@ public class ControladorSubsidio implements ActionListener {
         visSub.getBtnVer().setEnabled(true);
         visSub.getBtnCalcular().setEnabled(true);
         visSub.getBtnTotalizar().setEnabled(true);
-        visSub.getBtnAdicionar().setEnabled(true);
+        visSub.getBtnAdicionar().setEnabled(false);
         habilitarbtn();
         btnLimpiar();
         
@@ -492,8 +492,7 @@ public void btnEliminar(){
         visSub.getBtnTotalizar().setEnabled(true);
         visSub.getBtnLimpiar().setEnabled(true);
         visSub.getBtnSalir().setEnabled(true);
-        visSub.getBtnVer().setEnabled(true);
-        visSub.getBtnAdicionar().setEnabled(true);
+        visSub.getBtnVer1().setEnabled(true);
         
         ent.getBtnBuscarIdeEst().setEnabled(true);
         ent.getBtnBuscarapeEst().setEnabled(true);
@@ -501,7 +500,7 @@ public void btnEliminar(){
         ent.getBtnBuscarproSem().setEnabled(true);
         ent.getBtnBuscarvalmatSem().setEnabled(true);
         ent.getBtnOrdenarapeEst().setEnabled(true);
-        ent.getBtnOrdenarIdeCli().setEnabled(true);
+        ent.getBtnOrdenarIdeEst().setEnabled(true);
         ent.getBtnOrdenarproSem().setEnabled(true);
         ent.getBtnOrdenarvalmatSem().setEnabled(true);
         ent.getBtnOrdenarnomEst().setEnabled(true); 
@@ -510,11 +509,33 @@ public void btnEliminar(){
     
     public void desahabilitarbtn(){
         visSub.getBtnValidar().setEnabled(false);
+        visSub.getBtnAdicionar().setEnabled(false);
         visSub.getBtnCalcular().setEnabled(false);
         visSub.getBtnTotalizar().setEnabled(false);
         visSub.getBtnLimpiar().setEnabled(false);
         visSub.getBtnSalir().setEnabled(false);
        
+    }
+      
+    public void deshabilitarBtnVisSubent(){
+        visSub.getBtnAdicionar().setEnabled(false);
+        visSub.getBtnCalcular().setEnabled(false);
+        visSub.getBtnTotalizar().setEnabled(false);
+        visSub.getBtnVer1().setEnabled(false);
+       ent.getBtnBuscarIdeEst().setEnabled(false);
+       ent.getBtnBuscarapeEst().setEnabled(false);
+       ent.getBtnBuscarnomEst().setEnabled(false);
+       ent.getBtnBuscarproSem().setEnabled(false);
+       ent.getBtnBuscarvalmatSem().setEnabled(false);
+       ent.getBtnOrdenarapeEst().setEnabled(false);
+       ent.getBtnOrdenarIdeEst().setEnabled(false);
+       ent.getBtnOrdenarproSem().setEnabled(false);
+       ent.getBtnOrdenarvalmatSem().setEnabled(false);
+       ent.getBtnOrdenarnomEst().setEnabled(false);
+       ent.getBtnEditar().setEnabled(false);
+       ent.getBtnGuardar().setEnabled(false);
+       ent.getBtnEliminar().setEnabled(false);
+    
     }
 
     public void actionPerformed(ActionEvent e) {
